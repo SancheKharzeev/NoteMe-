@@ -10,12 +10,13 @@
 		E28FA5FF29DA92890017F5C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28FA5FE29DA92890017F5C9 /* AppDelegate.swift */; };
 		E28FA60129DA92890017F5C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28FA60029DA92890017F5C9 /* SceneDelegate.swift */; };
 		E28FA60329DA92890017F5C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28FA60229DA92890017F5C9 /* ViewController.swift */; };
-		E28FA60629DA92890017F5C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28FA60429DA92890017F5C9 /* Main.storyboard */; };
 		E28FA60829DA928B0017F5C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28FA60729DA928B0017F5C9 /* Assets.xcassets */; };
 		E28FA60B29DA928B0017F5C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28FA60929DA928B0017F5C9 /* LaunchScreen.storyboard */; };
 		E28FA61629DA928B0017F5C9 /* NoteMe_pt3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28FA61529DA928B0017F5C9 /* NoteMe_pt3Tests.swift */; };
 		E28FA62029DA928B0017F5C9 /* NoteMe_pt3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28FA61F29DA928B0017F5C9 /* NoteMe_pt3UITests.swift */; };
 		E28FA62229DA928B0017F5C9 /* NoteMe_pt3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28FA62129DA928B0017F5C9 /* NoteMe_pt3UITestsLaunchTests.swift */; };
+		E28FA62F29DAA2520017F5C9 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28FA62E29DAA2520017F5C9 /* CustomCell.swift */; };
+		E28FA63129DB4A400017F5C9 /* EditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28FA63029DB4A400017F5C9 /* EditVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,6 @@
 		E28FA5FE29DA92890017F5C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E28FA60029DA92890017F5C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E28FA60229DA92890017F5C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E28FA60529DA92890017F5C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E28FA60729DA928B0017F5C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E28FA60A29DA928B0017F5C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E28FA60C29DA928B0017F5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +49,8 @@
 		E28FA61B29DA928B0017F5C9 /* NoteMe pt3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NoteMe pt3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E28FA61F29DA928B0017F5C9 /* NoteMe_pt3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteMe_pt3UITests.swift; sourceTree = "<group>"; };
 		E28FA62129DA928B0017F5C9 /* NoteMe_pt3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteMe_pt3UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E28FA62E29DAA2520017F5C9 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		E28FA63029DB4A400017F5C9 /* EditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,14 @@
 		E28FA5FD29DA92890017F5C9 /* NoteMe pt3 */ = {
 			isa = PBXGroup;
 			children = (
+				E28FA60229DA92890017F5C9 /* ViewController.swift */,
+				E28FA62E29DAA2520017F5C9 /* CustomCell.swift */,
 				E28FA5FE29DA92890017F5C9 /* AppDelegate.swift */,
 				E28FA60029DA92890017F5C9 /* SceneDelegate.swift */,
-				E28FA60229DA92890017F5C9 /* ViewController.swift */,
-				E28FA60429DA92890017F5C9 /* Main.storyboard */,
 				E28FA60729DA928B0017F5C9 /* Assets.xcassets */,
 				E28FA60929DA928B0017F5C9 /* LaunchScreen.storyboard */,
 				E28FA60C29DA928B0017F5C9 /* Info.plist */,
+				E28FA63029DB4A400017F5C9 /* EditVC.swift */,
 			);
 			path = "NoteMe pt3";
 			sourceTree = "<group>";
@@ -233,7 +236,6 @@
 			files = (
 				E28FA60B29DA928B0017F5C9 /* LaunchScreen.storyboard in Resources */,
 				E28FA60829DA928B0017F5C9 /* Assets.xcassets in Resources */,
-				E28FA60629DA92890017F5C9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,8 +260,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E28FA63129DB4A400017F5C9 /* EditVC.swift in Sources */,
 				E28FA60329DA92890017F5C9 /* ViewController.swift in Sources */,
 				E28FA5FF29DA92890017F5C9 /* AppDelegate.swift in Sources */,
+				E28FA62F29DAA2520017F5C9 /* CustomCell.swift in Sources */,
 				E28FA60129DA92890017F5C9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +301,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E28FA60429DA92890017F5C9 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E28FA60529DA92890017F5C9 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E28FA60929DA928B0017F5C9 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -442,7 +438,6 @@
 				INFOPLIST_FILE = "NoteMe pt3/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +465,6 @@
 				INFOPLIST_FILE = "NoteMe pt3/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
